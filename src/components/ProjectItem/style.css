@@ -1,0 +1,50 @@
+h2 {
+    margin-bottom: 0.5rem;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5rem;
+}
+
+.project-card {
+    margin: 2rem;
+    height: 20rem;
+    width: 30rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.project-image {
+    display: block;
+    object-fit: cover;
+}
+
+.project-content {
+    position: relative;
+    bottom: 20%;
+    height: calc(20% - 2rem);
+    padding: 1rem;
+    background-color: rgba(31, 31, 31, 0.8);
+    backdrop-filter: blur(0.5rem);
+    transition: all 0.25s;
+}
+
+.project-description {
+    color: #ffffff00;
+    visibility: hidden;
+    transition: all 0.35s ease-in;
+}
+
+.project-card:hover .project-description {
+    color: #ffffff;
+    visibility: visible;
+}
+
+.project-card:hover .project-content {
+    height: 40%;
+    bottom: 40%;
+}
