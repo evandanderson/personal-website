@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css';
 
-import Home from './elements/Home';
-import Projects from './elements/Projects';
-import About from './elements/About';
+import Home from './elements/Home/Home';
+import Projects from './elements/Projects/Projects';
+import About from './elements/About/About';
 
 function App() {
   return (

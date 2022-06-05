@@ -1,5 +1,5 @@
-import Page from '../components/Page'
-import ProjectItem from '../components/ProjectItem/ProjectItem'
+import Page from '../../components/Page'
+import ProjectItem from '../../components/ProjectItem/ProjectItem'
 
 export default function Projects() {
     /*
