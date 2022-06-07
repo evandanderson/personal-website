@@ -6,7 +6,13 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 5rem;
+    padding-top: 4rem;
+    min-height: 100vh;
+    transition: all 0.25s;
+}
+
+.darken {
+    background-color: hsla(0, 0%, 0%, 0.8);
 }
 
 .project-card {
@@ -15,6 +21,15 @@ h2 {
     width: 30rem;
     border-radius: 1rem;
     overflow: hidden;
+    transition: all 0.25s;
+    position: inherit;
+}
+
+.active {
+    position: fixed;
+    top: calc(50% - 20rem);
+    height: 40rem;
+    width: 60rem;
 }
 
 .project-image {
@@ -28,7 +43,7 @@ h2 {
     height: calc(20% - 2rem);
     padding: 1rem;
     background-color: rgba(31, 31, 31, 0.8);
-    backdrop-filter: blur(0.5rem);
+    /*backdrop-filter: blur(0.5rem);*/
     transition: all 0.25s;
 }
 
@@ -46,4 +61,14 @@ h2 {
 .project-card:hover .project-content {
     height: 40%;
     bottom: 40%;
+}
+
+.active .project-content {
+    height: 40%;
+    bottom: 40%;
+}
+
+.active .project-description {
+    color: #ffffff;
+    visibility: visible;
 }

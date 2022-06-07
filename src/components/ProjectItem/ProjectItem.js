@@ -3,7 +3,7 @@ import "./style.css"
 
 export default function ProjectItem(props) {
     return (
-        <div className="project-card">
+        <div className={props.active ? "project-card active" : "project-card"} onClick={props.onClick}>
             <img className="project-image" src={props.src} alt={props.alt} height='100%' width='100%'></img>
             <div className="project-content">
                 <header>

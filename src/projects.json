@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Vibes for Spotify",
+        "image": "https://media.istockphoto.com/photos/programming-source-code-abstract-background-picture-id1047259374?k=20&m=1047259374&s=612x612&w=0&h=pt3XbBvrmiYgoYmVzsaUeXtV8vw_jJI9Ly8P7AL6Qig=",
+        "alt": "",
+        "description": "A powerful analytical companion for Spotify",
+        "languages": ["CSS", "HTML", "JavaScript", "Python"]
+    },
+    {
+        "title": "Raycasting",
+        "image": "https://answers.unity.com/storage/temp/15108-example1.jpg",
+        "alt": "",
+        "description": "A demonstration of raycasting in an FPS game",
+        "languages": ["Lua"]
+    },
+    {
+        "title": "3CP",
+        "image": "https://www.giantbomb.com/a/uploads/scale_medium/0/4109/189784-cp.jpg",
+        "alt": "",
+        "description": "A capture point game played by two teams",
+        "languages": ["Lua"]
+    },
+    {
+        "title": "Wordle",
+        "image": "https://nytco-assets.nytimes.com/2022/01/Screen-Shot-2022-01-30-at-10.05.09-PM.png",
+        "alt": "",
+        "description": "A recreation of the popular word game",
+        "languages": ["CSS", "HTML", "JavaScript"]
+    },
+    {
+        "title": "Snake",
+        "image": "https://helloacm.com/wp-content/uploads/2019/12/simple-snake-game-in-javascript.jpg",
+        "alt": "",
+        "description": "A recreation of the classic arcade game",
+        "languages": ["CSS", "HTML", "JavaScript"]
+    }
+]
