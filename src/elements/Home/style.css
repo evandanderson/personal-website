@@ -1,17 +1,18 @@
-.home-container {
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url('https://www.teahub.io/photos/full/281-2811959_photo-wallpaper-computer-coding-programing-codding-software-development.jpg');
-    background-size: cover;
-    filter: blur(0.2rem);
+.hero-banner {
+    height: calc(50vh + 10rem);
 }
 
-.home-banner {
+.hero-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(0.25rem) brightness(0.6);
+}
+
+.hero-text {
     position: absolute;
     left: 25%;
-    top: calc(50vh - 25% + 50px - 2rem);
+    top: calc(25vh + 5rem);
     width: 50%;
     text-align: center;
     font-size: 2rem;

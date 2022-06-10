@@ -2,6 +2,18 @@ h1, h2, h3, p {
   margin: 0;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
 nav {
   background-color: hsl(220, 13%, 10%);
   width: 100%;
@@ -36,7 +48,7 @@ li a:hover {
 }
 
 main {
-  height: calc(100vh - 50px);
+  min-height: calc(100vh - 50px);
 }
 
 iframe {

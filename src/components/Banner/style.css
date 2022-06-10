@@ -1,0 +1,26 @@
+h2 {
+    margin-bottom: 2rem;
+    line-height: normal;
+}
+
+a {
+    color: inherit;
+    text-underline-offset: 0.35rem;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+    height: 50vh;
+}
+
+.banner-image {
+    height: 100%;
+}
+
+.banner-description {
+    width: 30%;
+    line-height: 125%;
+    font-size: 1.25rem;
+}

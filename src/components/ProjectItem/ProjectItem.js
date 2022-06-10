@@ -7,7 +7,7 @@ export default function ProjectItem(props) {
             <img className="project-image" src={props.src} alt={props.alt} height='100%' width='100%'></img>
             <div className="project-content">
                 <header>
-                    <h2>{props.title}</h2>
+                    <h3>{props.title}</h3>
                 </header>
                 <div className="project-description">
                     <p>{props.description}</p>
