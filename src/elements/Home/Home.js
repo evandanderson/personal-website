@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react'
 import Banner from '../../components/Banner/Banner'
 import Page from '../../components/Page'
 import './style.css'
-import VibesExample from '../../images/VibesExample.png'
+import VibesExample from '../../images/VibesExample3.png'
+import Profile from '../../images/Profile.png'
 
 const words = [
     'Apache',
@@ -52,16 +53,17 @@ export default function Home() {
                 title='Project Spotlight: Vibes for Spotify'
                 href='/projects'
                 text='View projects'
-                description='Vibes is a powerful and unique companion for Spotify that offers analytics, recommendations, playlist creation, and more. Built using the Spotify Web API, Vibes analyzes songs, artists, albums, playlists, and your Spotify library to provide you with a fresh and intuitive way to explore and discover music.'
+                description='Vibes is a powerful and unique companion for Spotify that offers analytics, recommendations, playlist creation, and more. Built using the Spotify Web API, Vibes analyzes your Spotify library to provide you with a fresh and intuitive way to explore and discover music.'
                 src={VibesExample}
                 style={{background: 'rgb(252,110,107)', background: 'linear-gradient(180deg, rgba(252,110,107,1) 0%, rgba(104,193,193,1) 100%)'}}
             />
             <Banner title='About Me'
                 href='/about'
                 text='View more'
-                description='About me description'
-                src='https://www.giantbomb.com/a/uploads/scale_medium/0/4109/189784-cp.jpg'
+                description="I'm a full-stack developer from Dallas, Texas with over 5 years of personal and academic experience. I enjoy finding innovative and creative solutions to challenging problems ranging from UI/UX development to API design."
+                src={Profile}
                 style={{flexDirection: 'row-reverse'}}
+                imageStyle={{borderRadius: '50%'}}
             />
         </Page>
     )
