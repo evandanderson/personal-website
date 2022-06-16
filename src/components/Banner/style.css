@@ -12,15 +12,98 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 5rem;
-    height: 50vh;
+    min-height: fit-content;
+}
+
+.banner.project {
+    background: linear-gradient(180deg, rgba(252,110,107,1) 0%, rgba(104,193,193,1) 100%)
+}
+
+.banner.about {
+    flex-direction: row-reverse;
 }
 
 .banner-image {
-    height: 100%;
+    max-height: 30rem;
+    max-width: 50%;
+}
+
+.banner-image.about {
+    border-radius: 50%;
 }
 
 .banner-description {
-    width: 30%;
+    height: fit-content;
+    width: 30rem;
     line-height: 125%;
     font-size: 1.25rem;
+}
+
+@media (max-width: 1600px) {
+    .banner-image.about {
+        max-width: 30%;
+    }
+}
+
+.banner-description.project {
+    text-shadow: 0px 4px 20px black;
+}
+
+@media (max-width: 1280px) {
+    .banner {
+        padding: 5rem 2rem;
+    }
+
+    .banner-image {
+        max-height: unset;
+    }
+}
+
+@media (max-width: 1160px) {
+    .banner {
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem
+    }
+
+    .banner.about {
+        flex-direction: column;
+    }
+
+    .banner-image {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .banner-image.project {
+        max-width: calc(100vw - 10rem);
+    }
+
+    .banner-image.about {
+        max-width: 20rem;
+    }
+
+    .banner-description {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    html, body {
+        font-size: 13px;
+    }
+
+    .banner {
+        padding: 5rem 2rem;
+    }
+
+    .banner-image.project {
+        max-width:100%;
+    }
+
+    .banner-image.about {
+        max-width: 18rem;
+    }
 }

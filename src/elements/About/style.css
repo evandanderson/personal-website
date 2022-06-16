@@ -11,6 +11,7 @@
 input, label, textarea {
     font-size: 1.1rem;
     border-radius: 0.25rem;
+    padding: 0.25rem;
     border: none;
     font-family: inherit;
     width: 100%;

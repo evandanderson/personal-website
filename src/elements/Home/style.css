@@ -1,5 +1,5 @@
 .hero-banner {
-    height: calc(50vh + 10rem);
+    height: 40rem;
 }
 
 .hero-image {
@@ -11,9 +11,21 @@
 
 .hero-text {
     position: absolute;
-    left: 25%;
-    top: calc(25vh + 5rem);
-    width: 50%;
+    left: 10%;
+    top: 20rem;
+    width: 80%;
     text-align: center;
     font-size: 2rem;
+}
+
+@media (max-width: 1160px) {
+    .hero-banner {
+        max-height: 700px;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero-banner {
+        max-height: 500px;
+    }
 }

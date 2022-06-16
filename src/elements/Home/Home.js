@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import Banner from '../../components/Banner/Banner'
 import Page from '../../components/Page'
 import './style.css'
-import VibesExample from '../../images/VibesExample3.png'
+import VibesExample from '../../images/VibesExample.png'
 import Profile from '../../images/Profile.png'
 
 const words = [
@@ -11,6 +11,7 @@ const words = [
     'CSS',
     'Debian',
     'Django',
+    'GCP',
     'Git',
     'HTML',
     'Java',
@@ -50,20 +51,22 @@ export default function Home() {
                 </h1>
             </div>
             <Banner
+                type='project'
                 title='Project Spotlight: Vibes for Spotify'
                 href='/projects'
                 text='View projects'
                 description='Vibes is a powerful and unique companion for Spotify that offers analytics, recommendations, playlist creation, and more. Built using the Spotify Web API, Vibes analyzes your Spotify library to provide you with a fresh and intuitive way to explore and discover music.'
                 src={VibesExample}
-                style={{background: 'rgb(252,110,107)', background: 'linear-gradient(180deg, rgba(252,110,107,1) 0%, rgba(104,193,193,1) 100%)'}}
+                alt='Vibes for Spotify screenshot'
             />
-            <Banner title='About Me'
+            <Banner
+                type='about'
+                title='About Me'
                 href='/about'
                 text='View more'
                 description="I'm a full-stack developer from Dallas, Texas with over 5 years of personal and academic experience. I enjoy finding innovative and creative solutions to challenging problems ranging from UI/UX development to API design."
                 src={Profile}
-                style={{flexDirection: 'row-reverse'}}
-                imageStyle={{borderRadius: '50%'}}
+                alt='Picture of Evan Anderson'
             />
         </Page>
     )
