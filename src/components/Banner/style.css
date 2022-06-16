@@ -23,30 +23,30 @@ a {
     flex-direction: row-reverse;
 }
 
-.banner-image {
+.banner .image {
     max-height: 30rem;
     max-width: 50%;
 }
 
-.banner-image.about {
+.banner.about .image {
     border-radius: 50%;
 }
 
-.banner-description {
+.banner .description {
     height: fit-content;
     width: 30rem;
     line-height: 125%;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
+}
+
+.banner.project .description {
+    text-shadow: 0px 4px 20px black;
 }
 
 @media (max-width: 1600px) {
-    .banner-image.about {
+    .banner.about .image {
         max-width: 30%;
     }
-}
-
-.banner-description.project {
-    text-shadow: 0px 4px 20px black;
 }
 
 @media (max-width: 1280px) {
@@ -54,7 +54,7 @@ a {
         padding: 5rem 2rem;
     }
 
-    .banner-image {
+    .banner .image {
         max-height: unset;
     }
 }
@@ -71,20 +71,20 @@ a {
         flex-direction: column;
     }
 
-    .banner-image {
+    .banner .image {
         width: 100%;
         margin-bottom: 2rem;
     }
 
-    .banner-image.project {
+    .banner.project .image {
         max-width: calc(100vw - 10rem);
     }
 
-    .banner-image.about {
+    .banner.about .image {
         max-width: 20rem;
     }
 
-    .banner-description {
+    .banner .description {
         width: 100%;
         text-align: center;
     }
@@ -99,11 +99,11 @@ a {
         padding: 5rem 2rem;
     }
 
-    .banner-image.project {
+    .banner.project .image {
         max-width:100%;
     }
 
-    .banner-image.about {
+    .banner.about .image {
         max-width: 18rem;
     }
 }
