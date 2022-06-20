@@ -15,21 +15,34 @@ h3 {
     background-color: hsla(0, 0%, 0%, 0.8);
 }
 
-.project-card {
+.project-card-container {
+    height: 20rem;
+    width: 30rem;
     margin: 2rem;
+}
+
+.project-card {
     height: 20rem;
     width: 30rem;
     border-radius: 1rem;
     overflow: hidden;
     transition: all 0.25s;
-    position: inherit;
 }
 
-.active {
-    position: fixed;
-    top: calc(50% - 20rem);
+.project-card.active {
     height: 40rem;
     width: 60rem;
+    left: calc(50vw - 30rem) !important;
+    top: calc(50vh - 20rem) !important;
+}
+
+@media (max-width: 1087px) {
+    .project-card.active {
+        height: 30rem;
+        width: calc(100% - 2rem);
+        left: 1rem !important;
+        top: calc(50vh - 15rem) !important;
+    }
 }
 
 .project-image {

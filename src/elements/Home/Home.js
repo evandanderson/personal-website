@@ -38,6 +38,9 @@ export default function Home() {
             if (index < words.length - 1) {
                 setTimeout(() => setIndex(index + 1), (100 * (words[index].length - 1)) + delay + ((words[index].length - 1) * 100))
             }
+            else {
+                setTimeout(() => setIndex(0), (100 * (words[index].length - 1)) + delay + ((words[index].length - 1) * 100))
+            }
     }, [index])
 
     return (
